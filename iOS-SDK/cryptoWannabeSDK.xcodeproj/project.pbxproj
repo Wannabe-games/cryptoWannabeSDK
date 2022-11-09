@@ -11,7 +11,7 @@
 		14DB9FE4291BED7D0021C1A5 /* cryptoWannabeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB9FD9291BED7D0021C1A5 /* cryptoWannabeSDK.framework */; };
 		14DB9FE9291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FE8291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift */; };
 		14DB9FEA291BED7D0021C1A5 /* cryptoWannabeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DB9FDC291BED7D0021C1A5 /* cryptoWannabeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14DB9FFA291C19C30021C1A5 /* iOS_SDK_EXAMPLESApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FF9291C19C30021C1A5 /* iOS_SDK_EXAMPLESApp.swift */; };
+		14DB9FFA291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FF9291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift */; };
 		14DB9FFC291C19C30021C1A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FFB291C19C30021C1A5 /* ContentView.swift */; };
 		14DB9FFE291C19C40021C1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DB9FFD291C19C40021C1A5 /* Assets.xcassets */; };
 		14DBA001291C19C40021C1A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DBA000291C19C40021C1A5 /* Preview Assets.xcassets */; };
@@ -35,7 +35,7 @@
 		14DB9FE3291BED7D0021C1A5 /* cryptoWannabeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptoWannabeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DB9FE8291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoWannabeSDKTests.swift; sourceTree = "<group>"; };
 		14DB9FF7291C19C30021C1A5 /* cryptoWannabeSDK EXAMPLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cryptoWannabeSDK EXAMPLES.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14DB9FF9291C19C30021C1A5 /* iOS_SDK_EXAMPLESApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_SDK_EXAMPLESApp.swift; sourceTree = "<group>"; };
+		14DB9FF9291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoWannabeSDK_EXAMPLESApp.swift; sourceTree = "<group>"; };
 		14DB9FFB291C19C30021C1A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14DB9FFD291C19C40021C1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14DBA000291C19C40021C1A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		14DB9FF8291C19C30021C1A5 /* cryptoWannabeSDK EXAMPLES */ = {
 			isa = PBXGroup;
 			children = (
-				14DB9FF9291C19C30021C1A5 /* iOS_SDK_EXAMPLESApp.swift */,
+				14DB9FF9291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift */,
 				14DB9FFB291C19C30021C1A5 /* ContentView.swift */,
 				14DB9FFD291C19C40021C1A5 /* Assets.xcassets */,
 				14DB9FFF291C19C40021C1A5 /* Preview Content */,
@@ -282,7 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DB9FFC291C19C30021C1A5 /* ContentView.swift in Sources */,
-				14DB9FFA291C19C30021C1A5 /* iOS_SDK_EXAMPLESApp.swift in Sources */,
+				14DB9FFA291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
