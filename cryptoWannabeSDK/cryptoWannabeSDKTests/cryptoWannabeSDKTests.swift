@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import iOS_SDK
+@testable import cryptoWannabeSDK
 
 class cryptoWannabeSDKTests: XCTestCase {
 
