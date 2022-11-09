@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  iOS-SDK EXAMPLES
+//  cryptoWannabeSDK EXAMPLES
 //
 //  Created by Michał Fereniec on 09/11/2022.
 //

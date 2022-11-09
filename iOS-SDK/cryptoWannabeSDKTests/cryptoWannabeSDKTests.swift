@@ -1,6 +1,6 @@
 //
-//  iOS_SDKTests.swift
-//  iOS-SDKTests
+//  cryptoWannabeSDKTests.swift
+//  cryptoWannabeSDKTests
 //
 //  Created by Michał Fereniec on 09/11/2022.
 //
@@ -8,7 +8,7 @@
 import XCTest
 @testable import iOS_SDK
 
-class iOS_SDKTests: XCTestCase {
+class cryptoWannabeSDKTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
