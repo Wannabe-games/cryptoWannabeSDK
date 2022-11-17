@@ -12,10 +12,10 @@ This CocoaPods library helps you perform connection with Blockchain for iOS user
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Michal2390" => "michal.fereniec0@gmail.com" }
   
-  spec.ios.deployment_target = "12.1"
-  spec.swift_version = "4.2"
+  spec.ios.deployment_target = "14.0"
+  spec.swift_version = "5.3"
   
-  spec.source        = { :git => "https://github.com/Wannabe-games/cryptoWannabeSDK.git", :tag => "0.0.1" }
+  spec.source        = { :git => "https://github.com/Wannabe-games/cryptoWannabeSDK.git", :branch => 'Fetch_the_Cocoapod', :tag => "0.0.1" }
  spec.source_files  = "cryptoWannabeSDK/**/cryptoWannabeSDK.{h,m,swift}"
         
 end
