@@ -15,7 +15,7 @@ This CocoaPods library helps you perform connection with Blockchain for iOS user
   spec.ios.deployment_target = "14.0"
   spec.swift_version = "5.3"
   
-  spec.source        = { :git => "https://github.com/Wannabe-games/cryptoWannabeSDK.git", :branch => 'Fetch_the_Cocoapod', :tag => "0.1.0" }
+  spec.source        = { :git => "https://github.com/Wannabe-games/cryptoWannabeSDK.git", :branch => 'Fetch_the_Cocoapod' }
  spec.source_files  = "cryptoWannabeSDK/**/cryptoWannabeSDK.{h,m,swift}"
 
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
