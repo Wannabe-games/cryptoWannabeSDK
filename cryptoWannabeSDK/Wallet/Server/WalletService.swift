@@ -9,7 +9,7 @@ import Foundation
 
 class WalletService {
     
-    func getWalletDetails(completion: @escaping ( [WalletMetadata]?) -> () ) {
+    func getWalletDetails(completion: @escaping ((WalletMetadata?) -> () )) {
         
         guard let wannabeURL = URL(string: "https://proxy.wannabe.games") else { return }
         
@@ -27,7 +27,7 @@ class WalletService {
             let jsonDecoder = JSONDecoder()
             
             do { //[weak self]
-                let wallets = try jsonDecoder.decode([WalletMetadata].self, from: data)
+                let wallets = try jsonDecoder.decode(WalletMetadata.self, from: data)
                 completion(wallets)
             } catch {
                 completion(nil)
