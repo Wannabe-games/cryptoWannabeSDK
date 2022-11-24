@@ -34,6 +34,6 @@ public final class CryptoWannabeSDK {
     
     public static func logout() {
         //TODO: implement removing of the WalletMetadata
-        UserDefaultsHandler.remove()
+//        UserDefaultsHandler.remove()
     }
 }

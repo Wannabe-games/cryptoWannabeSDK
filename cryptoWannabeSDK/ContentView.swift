@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct ContentView: View {
     @State private var showWebView = false
@@ -16,8 +17,8 @@ struct ContentView: View {
         } label: {
             Text("cryptoWannabeSDK")
         }
-        .sheet(isPresented: $showWebView){
-            WebView(url: URL(string: "proxy.wannabe.games/"))
+        .sheet(isPresented: $showWebView) {
+//            WebView(url: URL(string: "proxy.wannabe.games/"))
         }
     }
     

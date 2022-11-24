@@ -10,7 +10,7 @@ import Foundation
 struct Profile: Codable {
     let type: String
     let context: String
-    let apps: Apps
+    let apps: App
     let appsMeta: AppsMeta
     let stxAddress: STXAddress
     

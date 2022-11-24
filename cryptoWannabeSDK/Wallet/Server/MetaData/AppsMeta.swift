@@ -8,10 +8,10 @@
 import Foundation
 
 struct AppsMeta: Codable {
+    let localhost3000, proxyWannabeGames: HTTP
     
-    let httpLocalhost3000, httpsProxyWannabeGames: HTTP
     enum CodingKeys: String, CodingKey {
-        case httpLocalhost3000 = "http://localhost:3000"
-        case httpsProxyWannabeGames = "https://proxy.wannabe.games"
+        case localhost3000 = "http://localhost:3000"
+        case proxyWannabeGames = "https://proxy.wannabe.games"
     }
 }
