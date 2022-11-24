@@ -19,6 +19,7 @@
 		1424F462292CEAF300AF0012 /* UserDefaultsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F461292CEAF300AF0012 /* UserDefaultsHandler.swift */; };
 		1424F464292CEC9C00AF0012 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F463292CEC9C00AF0012 /* Status.swift */; };
 		1424F469292CED6B00AF0012 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F468292CED6B00AF0012 /* Method.swift */; };
+		144CBBA5292F87AA000D43F1 /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CBBA4292F87AA000D43F1 /* WalletService.swift */; };
 		14DB9FDE291BED7D0021C1A5 /* cryptoWannabeSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FDD291BED7D0021C1A5 /* cryptoWannabeSDK.docc */; };
 		14DB9FE4291BED7D0021C1A5 /* cryptoWannabeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB9FD9291BED7D0021C1A5 /* cryptoWannabeSDK.framework */; };
 		14DB9FE9291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FE8291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift */; };
@@ -57,6 +58,7 @@
 		1424F461292CEAF300AF0012 /* UserDefaultsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHandler.swift; sourceTree = "<group>"; };
 		1424F463292CEC9C00AF0012 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		1424F468292CED6B00AF0012 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		144CBBA4292F87AA000D43F1 /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
 		14DB9FD9291BED7D0021C1A5 /* cryptoWannabeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cryptoWannabeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DB9FDC291BED7D0021C1A5 /* cryptoWannabeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cryptoWannabeSDK.h; sourceTree = "<group>"; };
 		14DB9FDD291BED7D0021C1A5 /* cryptoWannabeSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = cryptoWannabeSDK.docc; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				1424F463292CEC9C00AF0012 /* Status.swift */,
 				1424F468292CED6B00AF0012 /* Method.swift */,
 				1424F45F292CEA8900AF0012 /* WalletMetadata.swift */,
+				144CBBA4292F87AA000D43F1 /* WalletService.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				14089346292DA6150085F8ED /* WalletMetadataResponse.swift in Sources */,
 				14FCABD6292CFC2900AD8B49 /* Profile.swift in Sources */,
 				1424F462292CEAF300AF0012 /* UserDefaultsHandler.swift in Sources */,
+				144CBBA5292F87AA000D43F1 /* WalletService.swift in Sources */,
 				1424F453292C19AF00AF0012 /* ContentView.swift in Sources */,
 				1424F457292C240E00AF0012 /* AppDelegate.swift in Sources */,
 				14FCABD8292CFE8B00AD8B49 /* AppsMeta.swift in Sources */,
