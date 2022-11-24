@@ -1,6 +1,6 @@
 //
-//  cryptoWannabeSDK.swift
-//  cryptoWannabeSDK
+//  CryptoWannabeSDK.swift
+//  CryptoWannabeSDK
 //
 //  Created by Michał Fereniec on 09/11/2022.
 //
@@ -9,13 +9,18 @@ import Foundation
 
 public final class CryptoWannabeSDK {
 
-    static var isWalletAuthenticated: Bool {
+
+}
+
+//MARK: -- wallet interface
+
+extension CryptoWannabeSDK {
+    public static var isWalletAuthenticated: Bool {
         return walletMedatada != nil
     }
     
-    static var walletMedatada: WalletMetadata? {
-        //TODO: implement storage
-        return nil
+    public static var walletMedatada: WalletMetadata? {
+        return UserDefaultsHandler.walletMetadata
     }
     
     public static func login() {
@@ -27,13 +32,10 @@ public final class CryptoWannabeSDK {
          4. jak skończysz, daj znać, strzelimy se teamviewera
          
          *BONUS* niech to się kurwa zacznie kompilować pls [`]
-         
-         
          */
     }
     
     public static func logout() {
-        //TODO: implement removing of the WalletMetadata
-//        UserDefaultsHandler.remove()
+        UserDefaultsHandler.walletMetadata = nil
     }
 }

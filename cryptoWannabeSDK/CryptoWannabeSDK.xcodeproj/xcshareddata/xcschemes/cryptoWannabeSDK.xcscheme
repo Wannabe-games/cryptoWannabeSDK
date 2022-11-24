@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14DB9FD8291BED7D0021C1A5"
-               BuildableName = "cryptoWannabeSDK.framework"
-               BlueprintName = "cryptoWannabeSDK"
+               BuildableName = "CryptoWannabeSDK.framework"
+               BlueprintName = "CryptoWannabeSDK"
                ReferencedContainer = "container:cryptoWannabeSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14DB9FE2291BED7D0021C1A5"
-               BuildableName = "cryptoWannabeSDKTests.xctest"
-               BlueprintName = "cryptoWannabeSDKTests"
+               BuildableName = "CryptoWannabeSDKTests.xctest"
+               BlueprintName = "CryptoWannabeSDKTests"
                ReferencedContainer = "container:cryptoWannabeSDK.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14DB9FD8291BED7D0021C1A5"
-            BuildableName = "cryptoWannabeSDK.framework"
-            BlueprintName = "cryptoWannabeSDK"
+            BuildableName = "CryptoWannabeSDK.framework"
+            BlueprintName = "CryptoWannabeSDK"
             ReferencedContainer = "container:cryptoWannabeSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

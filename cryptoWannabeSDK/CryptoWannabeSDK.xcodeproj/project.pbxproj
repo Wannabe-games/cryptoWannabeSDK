@@ -21,7 +21,7 @@
 		1424F469292CED6B00AF0012 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F468292CED6B00AF0012 /* Method.swift */; };
 		144CBBA5292F87AA000D43F1 /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CBBA4292F87AA000D43F1 /* WalletService.swift */; };
 		14DB9FDE291BED7D0021C1A5 /* cryptoWannabeSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FDD291BED7D0021C1A5 /* cryptoWannabeSDK.docc */; };
-		14DB9FE4291BED7D0021C1A5 /* cryptoWannabeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB9FD9291BED7D0021C1A5 /* cryptoWannabeSDK.framework */; };
+		14DB9FE4291BED7D0021C1A5 /* CryptoWannabeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB9FD9291BED7D0021C1A5 /* CryptoWannabeSDK.framework */; };
 		14DB9FE9291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FE8291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift */; };
 		14DB9FEA291BED7D0021C1A5 /* cryptoWannabeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DB9FDC291BED7D0021C1A5 /* cryptoWannabeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14DB9FFA291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB9FF9291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift */; };
@@ -59,12 +59,12 @@
 		1424F463292CEC9C00AF0012 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		1424F468292CED6B00AF0012 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		144CBBA4292F87AA000D43F1 /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
-		14DB9FD9291BED7D0021C1A5 /* cryptoWannabeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cryptoWannabeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DB9FD9291BED7D0021C1A5 /* CryptoWannabeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoWannabeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DB9FDC291BED7D0021C1A5 /* cryptoWannabeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cryptoWannabeSDK.h; sourceTree = "<group>"; };
 		14DB9FDD291BED7D0021C1A5 /* cryptoWannabeSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = cryptoWannabeSDK.docc; sourceTree = "<group>"; };
-		14DB9FE3291BED7D0021C1A5 /* cryptoWannabeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptoWannabeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DB9FE3291BED7D0021C1A5 /* CryptoWannabeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWannabeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DB9FE8291BED7D0021C1A5 /* cryptoWannabeSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoWannabeSDKTests.swift; sourceTree = "<group>"; };
-		14DB9FF7291C19C30021C1A5 /* cryptoWannabeSDK EXAMPLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cryptoWannabeSDK EXAMPLES.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DB9FF7291C19C30021C1A5 /* CryptoWannabeSDK EXAMPLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoWannabeSDK EXAMPLES.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DB9FF9291C19C30021C1A5 /* cryptoWannabeSDK_EXAMPLESApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoWannabeSDK_EXAMPLESApp.swift; sourceTree = "<group>"; };
 		14DB9FFB291C19C30021C1A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14DB9FFD291C19C40021C1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14DB9FE4291BED7D0021C1A5 /* cryptoWannabeSDK.framework in Frameworks */,
+				14DB9FE4291BED7D0021C1A5 /* CryptoWannabeSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +152,9 @@
 		14DB9FDA291BED7D0021C1A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14DB9FD9291BED7D0021C1A5 /* cryptoWannabeSDK.framework */,
-				14DB9FE3291BED7D0021C1A5 /* cryptoWannabeSDKTests.xctest */,
-				14DB9FF7291C19C30021C1A5 /* cryptoWannabeSDK EXAMPLES.app */,
+				14DB9FD9291BED7D0021C1A5 /* CryptoWannabeSDK.framework */,
+				14DB9FE3291BED7D0021C1A5 /* CryptoWannabeSDKTests.xctest */,
+				14DB9FF7291C19C30021C1A5 /* CryptoWannabeSDK EXAMPLES.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,9 +222,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14DB9FD8291BED7D0021C1A5 /* cryptoWannabeSDK */ = {
+		14DB9FD8291BED7D0021C1A5 /* CryptoWannabeSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14DB9FED291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "cryptoWannabeSDK" */;
+			buildConfigurationList = 14DB9FED291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "CryptoWannabeSDK" */;
 			buildPhases = (
 				14DB9FD4291BED7D0021C1A5 /* Headers */,
 				14DB9FD5291BED7D0021C1A5 /* Sources */,
@@ -235,14 +235,14 @@
 			);
 			dependencies = (
 			);
-			name = cryptoWannabeSDK;
+			name = CryptoWannabeSDK;
 			productName = "iOS-SDK";
-			productReference = 14DB9FD9291BED7D0021C1A5 /* cryptoWannabeSDK.framework */;
+			productReference = 14DB9FD9291BED7D0021C1A5 /* CryptoWannabeSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		14DB9FE2291BED7D0021C1A5 /* cryptoWannabeSDKTests */ = {
+		14DB9FE2291BED7D0021C1A5 /* CryptoWannabeSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14DB9FF0291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "cryptoWannabeSDKTests" */;
+			buildConfigurationList = 14DB9FF0291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "CryptoWannabeSDKTests" */;
 			buildPhases = (
 				14DB9FDF291BED7D0021C1A5 /* Sources */,
 				14DB9FE0291BED7D0021C1A5 /* Frameworks */,
@@ -253,14 +253,14 @@
 			dependencies = (
 				14DB9FE6291BED7D0021C1A5 /* PBXTargetDependency */,
 			);
-			name = cryptoWannabeSDKTests;
+			name = CryptoWannabeSDKTests;
 			productName = "iOS-SDKTests";
-			productReference = 14DB9FE3291BED7D0021C1A5 /* cryptoWannabeSDKTests.xctest */;
+			productReference = 14DB9FE3291BED7D0021C1A5 /* CryptoWannabeSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		14DB9FF6291C19C30021C1A5 /* cryptoWannabeSDK EXAMPLES */ = {
+		14DB9FF6291C19C30021C1A5 /* CryptoWannabeSDK EXAMPLES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14DBA002291C19C40021C1A5 /* Build configuration list for PBXNativeTarget "cryptoWannabeSDK EXAMPLES" */;
+			buildConfigurationList = 14DBA002291C19C40021C1A5 /* Build configuration list for PBXNativeTarget "CryptoWannabeSDK EXAMPLES" */;
 			buildPhases = (
 				14DB9FF3291C19C30021C1A5 /* Sources */,
 				14DB9FF4291C19C30021C1A5 /* Frameworks */,
@@ -270,9 +270,9 @@
 			);
 			dependencies = (
 			);
-			name = "cryptoWannabeSDK EXAMPLES";
+			name = "CryptoWannabeSDK EXAMPLES";
 			productName = "iOS-SDK EXAMPLES";
-			productReference = 14DB9FF7291C19C30021C1A5 /* cryptoWannabeSDK EXAMPLES.app */;
+			productReference = 14DB9FF7291C19C30021C1A5 /* CryptoWannabeSDK EXAMPLES.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14DB9FD3291BED7D0021C1A5 /* Build configuration list for PBXProject "cryptoWannabeSDK" */;
+			buildConfigurationList = 14DB9FD3291BED7D0021C1A5 /* Build configuration list for PBXProject "CryptoWannabeSDK" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -309,9 +309,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14DB9FD8291BED7D0021C1A5 /* cryptoWannabeSDK */,
-				14DB9FE2291BED7D0021C1A5 /* cryptoWannabeSDKTests */,
-				14DB9FF6291C19C30021C1A5 /* cryptoWannabeSDK EXAMPLES */,
+				14DB9FD8291BED7D0021C1A5 /* CryptoWannabeSDK */,
+				14DB9FE2291BED7D0021C1A5 /* CryptoWannabeSDKTests */,
+				14DB9FF6291C19C30021C1A5 /* CryptoWannabeSDK EXAMPLES */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +389,7 @@
 /* Begin PBXTargetDependency section */
 		14DB9FE6291BED7D0021C1A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14DB9FD8291BED7D0021C1A5 /* cryptoWannabeSDK */;
+			target = 14DB9FD8291BED7D0021C1A5 /* CryptoWannabeSDK */;
 			targetProxy = 14DB9FE5291BED7D0021C1A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -688,7 +688,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14DB9FD3291BED7D0021C1A5 /* Build configuration list for PBXProject "cryptoWannabeSDK" */ = {
+		14DB9FD3291BED7D0021C1A5 /* Build configuration list for PBXProject "CryptoWannabeSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14DB9FEB291BED7D0021C1A5 /* Debug */,
@@ -697,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14DB9FED291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "cryptoWannabeSDK" */ = {
+		14DB9FED291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "CryptoWannabeSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14DB9FEE291BED7D0021C1A5 /* Debug */,
@@ -706,7 +706,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14DB9FF0291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "cryptoWannabeSDKTests" */ = {
+		14DB9FF0291BED7D0021C1A5 /* Build configuration list for PBXNativeTarget "CryptoWannabeSDKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14DB9FF1291BED7D0021C1A5 /* Debug */,
@@ -715,7 +715,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14DBA002291C19C40021C1A5 /* Build configuration list for PBXNativeTarget "cryptoWannabeSDK EXAMPLES" */ = {
+		14DBA002291C19C40021C1A5 /* Build configuration list for PBXNativeTarget "CryptoWannabeSDK EXAMPLES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14DBA003291C19C40021C1A5 /* Debug */,

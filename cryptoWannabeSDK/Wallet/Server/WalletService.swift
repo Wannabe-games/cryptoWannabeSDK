@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WalletService {
+ class WalletService {
     
     func getWalletDetails(completion: @escaping ((WalletMetadata?) -> () )) {
         
@@ -16,7 +16,7 @@ class WalletService {
         let session = URLSession.shared
         let task = session.dataTask(with: wannabeURL) { data, response, error in
             if let httpResponse = response as? HTTPURLResponse{
-                print(httpResponse.statusCode)
+                debugPrint(httpResponse.statusCode)
             }
             if let error = error {
                 print(error)
@@ -26,7 +26,7 @@ class WalletService {
           
             let jsonDecoder = JSONDecoder()
             
-            do { //[weak self]
+            do {
                 let wallets = try jsonDecoder.decode(WalletMetadata.self, from: data)
                 completion(wallets)
             } catch {
