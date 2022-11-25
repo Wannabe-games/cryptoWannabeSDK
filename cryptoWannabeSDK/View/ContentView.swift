@@ -11,6 +11,8 @@ import WebKit
 struct ContentView: View {
     @State private var showWebView = false
     
+    
+    
     var body: some View {
         Button {
             showWebView.toggle()
@@ -18,8 +20,13 @@ struct ContentView: View {
             Text("cryptoWannabeSDK")
         }
         .sheet(isPresented: $showWebView) {
-//            WebView(url: URL(string: "proxy.wannabe.games/"))
+   //         WebView(proxyURL: URL(string: "https://proxy.wannabe.games"))
         }
+        
+        Link(destination: URL(string: "https://proxy.wannabe.games")!, label: {
+            Text("cryptoWannabe")
+                .foregroundColor(.purple)
+        })
     }
     
 }

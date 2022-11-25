@@ -31,7 +31,6 @@ extension CryptoWannabeSDK {
          3. walletauthvc ma mieć na pokładzie webview, który odpali tego pierwszego urla od Filipa
          4. jak skończysz, daj znać, strzelimy se teamviewera
          
-         *BONUS* niech to się kurwa zacznie kompilować pls [`]
          */
     }
     
