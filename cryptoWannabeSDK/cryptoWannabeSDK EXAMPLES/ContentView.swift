@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+import CryptoWannabeSDK
 
 struct ContentView: View {
+    @State private var showWebView = false
+        
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world! I am future SDK made by Wannabe.Games! Isn't that awesome?!")
+        Button {
+            showWebView.toggle()
+        } label: {
+            Text("Connect with Wallet")
         }
-        .padding()
+        .sheet(isPresented: $showWebView) {
+            WebView()
+        }
     }
 }
 
