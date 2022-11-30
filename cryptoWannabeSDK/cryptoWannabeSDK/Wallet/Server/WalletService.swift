@@ -19,7 +19,7 @@ import Foundation
                 debugPrint(httpResponse.statusCode)
             }
             if let error = error {
-                print(error)
+                debugPrint(error)
             }
             
             guard let data = data else { completion(nil); return }
@@ -31,7 +31,7 @@ import Foundation
                 completion(wallets)
             } catch {
                 completion(nil)
-                print(error)
+                debugPrint(error)
             }
         }
         
