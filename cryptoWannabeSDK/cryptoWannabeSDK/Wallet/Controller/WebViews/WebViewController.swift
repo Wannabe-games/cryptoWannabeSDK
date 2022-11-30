@@ -31,15 +31,16 @@ public class WebViewController: UIViewController {
 extension WebViewController: WKNavigationDelegate {
 
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("Michał \(webView.url?.absoluteString)")
+        debugPrint("Michał \(String(describing: webView.url?.absoluteString))")
     }
-//
-//    func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
-//        track("webViewWebContentProcessDidTerminate")
-//    }
-//
-//    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-//        track("didFail")
-//        self.hideProgressView()
-//    }
+
+    public func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+        debugPrint("webViewWebContent Process Did Terminate")
+        self.webView.reload()
+    }
+
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        debugPrint("did Fail Navigation")
+        self.reloadInputViews() // redundant ?
+    }
 }

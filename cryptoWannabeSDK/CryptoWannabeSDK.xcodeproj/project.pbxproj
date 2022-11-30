@@ -129,14 +129,25 @@
 			path = Server;
 			sourceTree = "<group>";
 		};
+		142ED35D293708D000803A85 /* Profile Model */ = {
+			isa = PBXGroup;
+			children = (
+				14089349292DA8500085F8ED /* App.swift */,
+				14FCABD7292CFE8B00AD8B49 /* AppsMeta.swift */,
+				1408934D292DAA550085F8ED /* STXAddress.swift */,
+				1408934B292DAA250085F8ED /* HTTP.swift */,
+			);
+			path = "Profile Model";
+			sourceTree = "<group>";
+		};
 		143FBC2D2933C5BC00335EBB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				14FCABD4292CFBFB00AD8B49 /* MetaData */,
 				14089345292DA6150085F8ED /* WalletMetadataResponse.swift */,
 				1424F463292CEC9C00AF0012 /* Status.swift */,
 				1424F468292CED6B00AF0012 /* Method.swift */,
 				1424F45F292CEA8900AF0012 /* WalletMetadata.swift */,
+				14FCABD4292CFBFB00AD8B49 /* MetaData */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,10 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				14FCABD5292CFC2900AD8B49 /* Profile.swift */,
-				14089349292DA8500085F8ED /* App.swift */,
-				14FCABD7292CFE8B00AD8B49 /* AppsMeta.swift */,
-				1408934D292DAA550085F8ED /* STXAddress.swift */,
-				1408934B292DAA250085F8ED /* HTTP.swift */,
+				142ED35D293708D000803A85 /* Profile Model */,
 			);
 			path = MetaData;
 			sourceTree = "<group>";
