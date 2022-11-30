@@ -15,6 +15,6 @@ public struct WebView: UIViewControllerRepresentable {
         return WebViewController()
     }
     
-    public func updateUIViewController(_ uiViewController: WebViewController, context: Context) {
+    public func updateUIViewController(_ UIViewController: WebViewController, context: Context) {
     }
 }

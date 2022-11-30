@@ -21,8 +21,8 @@ public class WebViewController: UIViewController {
         view.backgroundColor = .cyan
         view.addSubview(webView)
         webView.frame = view.frame
-        guard let proxyURL = URL(string: "https://www.allegro.pl") else { return }
-//        guard let link = URL(string: "https://proxy.wannabe.games") else { return }
+       // guard let proxyURL = URL(string: "https://www.allegro.pl") else { return }
+        guard let proxyURL = URL(string: "https://proxy.wannabe.games/api/token") else { return }
         let request = URLRequest(url: proxyURL)
         webView.load(request)
     }
