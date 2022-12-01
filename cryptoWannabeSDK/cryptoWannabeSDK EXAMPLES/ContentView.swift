@@ -19,12 +19,18 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showWebView) {
             WebView()
+        }.onAppear {
+            TokenService().getToken { token in
+                print("Token: \(token)")
+            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        } .previewLayout(.sizeThatFits)
     }
 }

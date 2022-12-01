@@ -10,6 +10,9 @@ import Foundation
 struct UserDefaultsHandler {
     @Storage(key: .walletMetadata, defaultValue:  nil)
     static var walletMetadata: WalletMetadata?
+    
+    @Storage(key: .token, defaultValue: "")
+    static var token: String
 }
 
 @propertyWrapper
@@ -39,4 +42,5 @@ struct Storage<T: Codable> {
 
 enum StorageKey: String {
     case walletMetadata
+    case token
 }

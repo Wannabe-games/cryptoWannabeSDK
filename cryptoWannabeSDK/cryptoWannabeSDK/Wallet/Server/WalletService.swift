@@ -34,8 +34,6 @@ import Foundation
                 debugPrint(error)
             }
         }
-        
         task.resume()
-        
     }
 }

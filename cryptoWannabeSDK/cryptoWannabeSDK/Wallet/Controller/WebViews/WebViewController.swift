@@ -21,9 +21,10 @@ public class WebViewController: UIViewController {
         view.backgroundColor = .cyan
         view.addSubview(webView)
         webView.frame = view.frame
-       // guard let proxyURL = URL(string: "https://www.allegro.pl") else { return }
-        guard let proxyURL = URL(string: "https://proxy.wannabe.games/api/token") else { return }
-        let request = URLRequest(url: proxyURL)
+        guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/WANNABE-RandomowyCi%C4%85gZnak%C3%B3w") else { return }
+        
+        var request = URLRequest(url: proxyURL)
+//        request.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
         webView.load(request)
     }
 }
@@ -31,7 +32,7 @@ public class WebViewController: UIViewController {
 extension WebViewController: WKNavigationDelegate {
 
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        debugPrint("Michał \(String(describing: webView.url?.absoluteString))")
+//        debugPrint("Michał \(String(describing: webView.url?.absoluteString))")
     }
 
     public func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
