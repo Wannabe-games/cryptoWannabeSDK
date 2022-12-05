@@ -21,7 +21,7 @@ public class WebViewController: UIViewController {
         view.backgroundColor = .cyan
         view.addSubview(webView)
         webView.frame = view.frame
-        guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/WANNABE-RandomowyCi%C4%85gZnak%C3%B3w") else { return }
+        guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
         
         var request = URLRequest(url: proxyURL)
 //        request.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
