@@ -33,11 +33,11 @@ public class WebViewController: UIViewController {
 extension WebViewController: WKNavigationDelegate {
     
     public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        print("Michał: fromCommit \(webView.url?.absoluteString)")
+        print("Michał: fromCommit \(String(describing: webView.url?.absoluteString))")
     }
     
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("Michał: fromFinish \(webView.url?.absoluteString)")
+        print("Michał: fromFinish \(String(describing: webView.url?.absoluteString))")
         
         guard let absoluteString = webView.url?.absoluteString else { return }
         if absoluteString.hasPrefix("https://proxy.wannabe.games/api/connect") && absoluteString.hasSuffix("wallet") {
