@@ -18,6 +18,7 @@ struct ContentView: View {
             Text("Connect with Wallet")
         }
         .sheet(isPresented: $showWebView) {
+            //tutaj otworzyc chrome'a z urlem
             WebView()
         }.onAppear {
             TokenService().getToken { token in

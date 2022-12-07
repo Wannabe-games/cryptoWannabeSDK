@@ -22,7 +22,6 @@ public class WebViewController: UIViewController {
         view.addSubview(webView)
         webView.frame = view.frame
         guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
-        
         var request = URLRequest(url: proxyURL)
         //        request.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
         webView.load(request)
@@ -44,7 +43,7 @@ extension WebViewController: WKNavigationDelegate {
         if absoluteString.hasPrefix("https://proxy.wannabe.games/api/connect") && absoluteString.hasSuffix("wallet") {
 //            Tu coś się dzieje
         }
-        
+        //otworzyc przez chrome, a nie safari z tym linkiem
         print("Michał: token \(UserDefaultsHandler.token)")
         if absoluteString == "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)" {
 //        if absoluteString == "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet" {
