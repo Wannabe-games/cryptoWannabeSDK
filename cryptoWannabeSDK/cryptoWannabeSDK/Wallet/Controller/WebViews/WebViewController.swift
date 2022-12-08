@@ -20,14 +20,32 @@ public class WebViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .cyan
         view.addSubview(webView)
-        webView.frame = view.frame
-        guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
+        webView.frame = view.bounds
+        //googlechrome://www.google.com
+        //firefox://open-url?url=http://
+//sniffer
+        func sniff() {
+            var shouldSniff = true
+            var userAlreadyLoggedIn = false
+            var numberOfRepeats = 0
+            Timer.scheduledTimer(withTimeInterval: 60 /*number of seconds*/, repeats: shouldSniff) { timer in
+                if (userAlreadyLoggedIn == false && numberOfRepeats < 10) {
+                    shouldSniff = false
+                    numberOfRepeats += 1
+                    //alternatywnie: timer.invalidate()
+                    //some_condition should include max 10 repeats
+                }
+            }
+        }
+        guard let proxyURL = URL(string: "googlechrome://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
         UIApplication.shared.open(proxyURL, completionHandler: nil)
         var request = URLRequest(url: proxyURL)
         //        request.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
         webView.load(request)
         
         self.webView.navigationDelegate = self
+        //sniff here/
+        sniff()
     }
 }
 
@@ -48,13 +66,13 @@ extension WebViewController: WKNavigationDelegate {
         }
         //otworzyc przez chrome, a nie safari z tym linkiem
         print("Michał: token \(UserDefaultsHandler.token)")
-        if absoluteString == "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)" {
+        if absoluteString == "googlechrome://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)" {
 //        if absoluteString == "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet" {
             //Tu najprawdopodobniej dostanę odpowiedz
             
             webView.evaluateJavaScript("document.body.innerHTML") { html, error in
                 print("Michał: evaluate2")
-                print(html)
+                print(html ?? nil)
             }
         }
     }
