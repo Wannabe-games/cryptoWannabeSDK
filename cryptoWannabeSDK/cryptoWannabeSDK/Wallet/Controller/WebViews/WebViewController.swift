@@ -24,28 +24,34 @@ public class WebViewController: UIViewController {
         //googlechrome://www.google.com
         //firefox://open-url?url=http://
 //sniffer
-        func sniff() {
-            var shouldSniff = true
-            var userAlreadyLoggedIn = false
-            var numberOfRepeats = 0
-            Timer.scheduledTimer(withTimeInterval: 60 /*number of seconds*/, repeats: shouldSniff) { timer in
-                if (userAlreadyLoggedIn == false && numberOfRepeats < 10) {
-                    shouldSniff = false
-                    numberOfRepeats += 1
-                    //alternatywnie: timer.invalidate()
-                    //some_condition should include max 10 repeats
-                }
-            }
-        }
-        guard let proxyURL = URL(string: "googlechrome://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
+
+        guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
         UIApplication.shared.open(proxyURL, completionHandler: nil)
         var request = URLRequest(url: proxyURL)
         //        request.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
         webView.load(request)
-        
-        self.webView.navigationDelegate = self
-        //sniff here/
+        webView.navigationDelegate = self
+       // sniff here/
         sniff()
+    }
+    
+    func sniff() {
+        var shouldSniff = true
+        var userAlreadyLoggedIn = false
+        var numberOfRepeats = 0
+        
+        Timer.scheduledTimer(withTimeInterval: 60 /*number of seconds*/, repeats: shouldSniff) { timer in
+            
+            guard let walletURL = URL(string: "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet") else { return }
+            let request = URLRequest(url: walletURL)
+            
+            if (userAlreadyLoggedIn == false && numberOfRepeats < 10) {
+                shouldSniff = false
+                numberOfRepeats += 1
+                //alternatywnie: timer.invalidate()
+                //some_condition should include max 10 repeats
+            }
+        }
     }
 }
 
@@ -54,7 +60,9 @@ extension WebViewController: WKNavigationDelegate {
     public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         print("Michał: fromCommit \(String(describing: webView.url?.absoluteString))")
     }
-    
+    //deeplink
+    //universallink
+    //bridge
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("Michał: fromFinish \(String(describing: webView.url?.absoluteString))")
         
@@ -66,14 +74,19 @@ extension WebViewController: WKNavigationDelegate {
         }
         //otworzyc przez chrome, a nie safari z tym linkiem
         print("Michał: token \(UserDefaultsHandler.token)")
-        if absoluteString == "googlechrome://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)" {
-//        if absoluteString == "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet" {
-            //Tu najprawdopodobniej dostanę odpowiedz
+//        if absoluteString == "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)" {
+        if absoluteString == "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet" {
+            
+            //JSON with user data probably here
             
             webView.evaluateJavaScript("document.body.innerHTML") { html, error in
                 print("Michał: evaluate2")
                 print(html ?? nil)
+                //maybe decode html here to get json with data about user login
             }
+            //lub
+            // 2 opcja
+            // Wyciągnąc ciastka i inne rzeczy które autoryzują https
         }
     }
 
