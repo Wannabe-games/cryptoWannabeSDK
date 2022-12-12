@@ -34,6 +34,9 @@ public class WebViewController: UIViewController {
         webView.load(request)
         webView.navigationDelegate = self
        // sniff here/
+        loadData(from: proxyURL) { NetworkResult in
+            <#code#>
+        }
         sniff()
     }
     
@@ -64,13 +67,26 @@ extension WebViewController: WKNavigationDelegate {
         var request = URLRequest(url: proxyURL)
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else { return }
-            guard let model = try? JSONDecoder().decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: <#T##Data#>)
+            guard let model = try? JSONDecoder().decode(LoginResponse.self, from: data) else { return }
+            print("Michał login model: \(model)")
         }
     }
+    
+    func loadData(from url: URL,
+                     completionHandler: @escaping (NetworkResult) -> Void) {
+           let task = URLSession.shared.dataTask(with: url) { data, _, error in
+               let result = data.map(NetworkResult.success) ?? .failure(error)
+               completionHandler(result)
+           }
+           task.resume()
+       }
 
     public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         print("Michał: fromCommit \(String(describing: webView.url?.absoluteString))")
        // getLoginInfo()
+//        loadData(from: url) { <#NetworkResult#> in
+//            <#code#>
+//        }
         guard let absoluteString = webView.url?.absoluteString else { return }
         if absoluteString.hasPrefix("https://proxy.wannabe.games/api/connect") && absoluteString.hasSuffix(token) {
 //            Tu coś się dzieje
