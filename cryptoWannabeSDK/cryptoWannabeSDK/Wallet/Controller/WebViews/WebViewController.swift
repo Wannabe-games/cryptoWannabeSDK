@@ -10,6 +10,8 @@ import WebKit
 
 public class WebViewController: UIViewController {
     
+    var token = UserDefaultsHandler.token
+
     lazy var webView: WKWebView = {
         let webView = WKWebView()
         webView.navigationDelegate = self
@@ -56,9 +58,24 @@ public class WebViewController: UIViewController {
 }
 
 extension WebViewController: WKNavigationDelegate {
-    
+  
+    public func getLoginInfo(completion: @escaping ((String) -> Void) ) {
+        guard let proxyURL = URL(string: "https://proxy.wannabe.games/api/token") else { return }
+        var request = URLRequest(url: proxyURL)
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else { return }
+            guard let model = try? JSONDecoder().decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: <#T##Data#>)
+        }
+    }
+
     public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         print("Michał: fromCommit \(String(describing: webView.url?.absoluteString))")
+       // getLoginInfo()
+        guard let absoluteString = webView.url?.absoluteString else { return }
+        if absoluteString.hasPrefix("https://proxy.wannabe.games/api/connect") && absoluteString.hasSuffix(token) {
+//            Tu coś się dzieje
+//            UIApplication.shared.open(absoluteString, completionHandler: nil)
+        }
     }
     //deeplink
     //universallink
