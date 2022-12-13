@@ -13,6 +13,7 @@
 		1408934E292DAA550085F8ED /* STXAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1408934D292DAA550085F8ED /* STXAddress.swift */; };
 		140C02AD293E9D6700380694 /* AsyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C02AC293E9D6700380694 /* AsyncService.swift */; };
 		141948892947AE1000E53510 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141948882947AE1000E53510 /* NetworkResult.swift */; };
+		1419488B29485B6400E53510 /* LoginExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419488A29485B6400E53510 /* LoginExample.swift */; };
 		1424F453292C19AF00AF0012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F452292C19AF00AF0012 /* ContentView.swift */; };
 		1424F455292C1D5C00AF0012 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F454292C1D5C00AF0012 /* WebViewController.swift */; };
 		1424F457292C240E00AF0012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F456292C240E00AF0012 /* AppDelegate.swift */; };
@@ -20,6 +21,8 @@
 		1424F462292CEAF300AF0012 /* UserDefaultsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F461292CEAF300AF0012 /* UserDefaultsHandler.swift */; };
 		1424F464292CEC9C00AF0012 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F463292CEC9C00AF0012 /* Status.swift */; };
 		1424F469292CED6B00AF0012 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F468292CED6B00AF0012 /* Method.swift */; };
+		1427EC78294911A900D48424 /* CryptoWannabeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB9FD9291BED7D0021C1A5 /* CryptoWannabeSDK.framework */; };
+		1427EC79294911A900D48424 /* CryptoWannabeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB9FD9291BED7D0021C1A5 /* CryptoWannabeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14305BCF294287CC003E5468 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14305BCE294287CC003E5468 /* LoginService.swift */; };
 		1435350429395C2900CE8FC9 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435350329395C2900CE8FC9 /* TokenService.swift */; };
 		143535082939671D00CE8FC9 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143535072939671D00CE8FC9 /* TokenResponse.swift */; };
@@ -41,6 +44,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1427EC762949105E00D48424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DB9FD0291BED7D0021C1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DB9FF6291C19C30021C1A5;
+			remoteInfo = "CryptoWannabeSDK EXAMPLES";
+		};
+		1427EC7A294911A900D48424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DB9FD0291BED7D0021C1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DB9FD8291BED7D0021C1A5;
+			remoteInfo = CryptoWannabeSDK;
+		};
 		14DB9FE5291BED7D0021C1A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14DB9FD0291BED7D0021C1A5 /* Project object */;
@@ -50,6 +67,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1427EC7C294911A900D48424 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1427EC79294911A900D48424 /* CryptoWannabeSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		14089345292DA6150085F8ED /* WalletMetadataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMetadataResponse.swift; sourceTree = "<group>"; };
 		14089349292DA8500085F8ED /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -57,6 +88,7 @@
 		1408934D292DAA550085F8ED /* STXAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STXAddress.swift; sourceTree = "<group>"; };
 		140C02AC293E9D6700380694 /* AsyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncService.swift; sourceTree = "<group>"; };
 		141948882947AE1000E53510 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		1419488A29485B6400E53510 /* LoginExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExample.swift; sourceTree = "<group>"; };
 		1424F44B292C0B4F00AF0012 /* cryptoWannabeSDK EXAMPLES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "cryptoWannabeSDK EXAMPLES.entitlements"; sourceTree = "<group>"; };
 		1424F452292C19AF00AF0012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1424F454292C1D5C00AF0012 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1427EC78294911A900D48424 /* CryptoWannabeSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +214,7 @@
 			children = (
 				1436BBB12947446500870C8D /* LoginResponse.swift */,
 				141948882947AE1000E53510 /* NetworkResult.swift */,
+				1419488A29485B6400E53510 /* LoginExample.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -343,6 +377,7 @@
 			);
 			dependencies = (
 				14DB9FE6291BED7D0021C1A5 /* PBXTargetDependency */,
+				1427EC772949105E00D48424 /* PBXTargetDependency */,
 			);
 			name = CryptoWannabeSDKTests;
 			productName = "iOS-SDKTests";
@@ -356,10 +391,12 @@
 				14DB9FF3291C19C30021C1A5 /* Sources */,
 				14DB9FF4291C19C30021C1A5 /* Frameworks */,
 				14DB9FF5291C19C30021C1A5 /* Resources */,
+				1427EC7C294911A900D48424 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1427EC7B294911A900D48424 /* PBXTargetDependency */,
 			);
 			name = "CryptoWannabeSDK EXAMPLES";
 			productName = "iOS-SDK EXAMPLES";
@@ -381,6 +418,7 @@
 					};
 					14DB9FE2291BED7D0021C1A5 = {
 						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 14DB9FF6291C19C30021C1A5;
 					};
 					14DB9FF6291C19C30021C1A5 = {
 						CreatedOnToolsVersion = 14.1;
@@ -401,8 +439,8 @@
 			projectRoot = "";
 			targets = (
 				14DB9FD8291BED7D0021C1A5 /* CryptoWannabeSDK */,
-				14DB9FE2291BED7D0021C1A5 /* CryptoWannabeSDKTests */,
 				14DB9FF6291C19C30021C1A5 /* CryptoWannabeSDK EXAMPLES */,
+				14DB9FE2291BED7D0021C1A5 /* CryptoWannabeSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -450,6 +488,7 @@
 				143535082939671D00CE8FC9 /* TokenResponse.swift in Sources */,
 				14FCABD8292CFE8B00AD8B49 /* AppsMeta.swift in Sources */,
 				14DBA006291C21400021C1A5 /* CryptoWannabeSDK.swift in Sources */,
+				1419488B29485B6400E53510 /* LoginExample.swift in Sources */,
 				1435350429395C2900CE8FC9 /* TokenService.swift in Sources */,
 				1408934A292DA8500085F8ED /* App.swift in Sources */,
 				1408934E292DAA550085F8ED /* STXAddress.swift in Sources */,
@@ -485,6 +524,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1427EC772949105E00D48424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DB9FF6291C19C30021C1A5 /* CryptoWannabeSDK EXAMPLES */;
+			targetProxy = 1427EC762949105E00D48424 /* PBXContainerItemProxy */;
+		};
+		1427EC7B294911A900D48424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DB9FD8291BED7D0021C1A5 /* CryptoWannabeSDK */;
+			targetProxy = 1427EC7A294911A900D48424 /* PBXContainerItemProxy */;
+		};
 		14DB9FE6291BED7D0021C1A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 14DB9FD8291BED7D0021C1A5 /* CryptoWannabeSDK */;
@@ -688,11 +737,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9GMKCF5AD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Wannabe.iOS-SDKTests";
@@ -702,6 +752,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoWannabeSDK EXAMPLES.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoWannabeSDK EXAMPLES";
 			};
 			name = Debug;
 		};
@@ -709,11 +760,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9GMKCF5AD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Wannabe.iOS-SDKTests";
@@ -723,6 +775,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoWannabeSDK EXAMPLES.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoWannabeSDK EXAMPLES";
 			};
 			name = Release;
 		};
@@ -743,7 +796,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,7 +828,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

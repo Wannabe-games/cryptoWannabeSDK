@@ -35,9 +35,10 @@ public class WebViewController: UIViewController {
         webView.navigationDelegate = self
        // sniff here/
         loadData(from: proxyURL) { NetworkResult in
-            <#code#>
+            //
         }
         sniff()
+       
     }
     
     func sniff() {
@@ -67,16 +68,16 @@ extension WebViewController: WKNavigationDelegate {
         var request = URLRequest(url: proxyURL)
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else { return }
-            guard let model = try? JSONDecoder().decode(LoginResponse.self, from: data) else { return }
-            print("Michał login model: \(model)")
+          //  guard let model = try? JSONDecoder().decode(LoginResponse.self, from: data) else { return }
+            //print("Michał login model: \(model)")
         }
     }
     
     func loadData(from url: URL,
                      completionHandler: @escaping (NetworkResult) -> Void) {
            let task = URLSession.shared.dataTask(with: url) { data, _, error in
-               let result = data.map(NetworkResult.success) ?? .failure(error)
-               completionHandler(result)
+//let result = data.map(NetworkResult.success) ?? .failure(error)
+//completionHandler(result)
            }
            task.resume()
        }
@@ -87,6 +88,8 @@ extension WebViewController: WKNavigationDelegate {
 //        loadData(from: url) { <#NetworkResult#> in
 //            <#code#>
 //        }
+        var loginExample = LoginResponse(status: "success", responseInfo: "Data exist", method: "GET", data: "profile:...")
+        print(loginExample.status + " " + loginExample.responseInfo + " "  + loginExample.data + " " + loginExample.method + " " + loginExample.data)
         guard let absoluteString = webView.url?.absoluteString else { return }
         if absoluteString.hasPrefix("https://proxy.wannabe.games/api/connect") && absoluteString.hasSuffix(token) {
 //            Tu coś się dzieje

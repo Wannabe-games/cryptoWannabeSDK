@@ -7,9 +7,16 @@
 
 import Foundation
 
-struct LoginResponse: Decodable {
+class LoginResponse {
     let status: String
     let responseInfo: String
-    let method: Method
-    let data: TokenDataModel
+    let method: String
+    let data: String
+    
+    init(status: String, responseInfo: String, method: String, data: String) {
+        self.status = status
+        self.responseInfo = responseInfo
+        self.method = method
+        self.data = data
+    }
 }
