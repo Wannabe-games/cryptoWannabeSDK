@@ -8,7 +8,7 @@
 import Foundation
 import WebKit
 
-public class WebViewController: UIViewController {
+public class WebViewController: UIViewController, WKNavigationDelegate {
     
     var token = UserDefaultsHandler.token
 
@@ -28,11 +28,12 @@ public class WebViewController: UIViewController {
 //sniffer
 
         guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
-        UIApplication.shared.open(proxyURL, completionHandler: nil)
-        var request = URLRequest(url: proxyURL)
+//        UIApplication.shared.open(proxyURL, completionHandler: nil)
+//        var request = URLRequest(url: proxyURL)
         //        request.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
-        webView.load(request)
+        webView.load(URLRequest(url: proxyURL))
         webView.navigationDelegate = self
+        webView.allowsBackForwardNavigationGestures = true
        // sniff here/
         loadData(from: proxyURL) { NetworkResult in
             //
@@ -61,7 +62,7 @@ public class WebViewController: UIViewController {
     }
 }
 
-extension WebViewController: WKNavigationDelegate {
+extension WebViewController {
   
     public func getLoginInfo(completion: @escaping ((String) -> Void) ) {
         guard let proxyURL = URL(string: "https://proxy.wannabe.games/api/token") else { return }
@@ -128,6 +129,17 @@ extension WebViewController: WKNavigationDelegate {
 
     public func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
         debugPrint("webViewWebContent Process Did Terminate")
-//        self.webView.reload()
+        self.webView.reload()
+    }
+    
+//    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void) {
+//        decisionHandler(.allow)
+//    }
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == .linkActivated {
+            guard let url = navigationAction.request.url else {return}
+            webView.load(URLRequest(url: url))
+        }
+        decisionHandler(.allow)
     }
 }
