@@ -19,18 +19,11 @@ extension CryptoWannabeSDK {
         return walletMedatada != nil
     }
     
-    public static var walletMedatada: WalletMetadata? {
+    static var walletMedatada: WalletMetadata? {
         return UserDefaultsHandler.walletMetadata
     }
     
     public static func login() {
-        //TODO: checklist to run auth:
-        /*/
-        1. ta metodka niech przyjmuje jako parametr VC, w którym ma zaprezentować swój WaletAuthVC
-         2. zaimplementować WalletAuthVC
-         3. walletauthvc ma mieć na pokładzie webview, który odpali tego pierwszego urla od Filipa
-         4. jak skończysz, daj znać, strzelimy se teamviewera
-         */
     }
     
     public static func logout() {

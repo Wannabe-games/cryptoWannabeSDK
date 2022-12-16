@@ -7,8 +7,7 @@
 
 import Foundation
 
-public struct WalletMetadata: Codable {
-    //TODO: replicate the structure, that Filip serves
+struct WalletMetadata: Codable {
     let profile: Profile
     let email: String
     let decentralizedID: String

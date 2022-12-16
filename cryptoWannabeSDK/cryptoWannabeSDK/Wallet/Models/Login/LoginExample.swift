@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class LoginExample {
+class LoginExample {
     var response: LoginResponse
     init(response: LoginResponse) {
         self.response = response

@@ -7,7 +7,7 @@
 
 import Foundation
 
- class WalletService {
+class WalletService {
     
     func getWalletDetails(completion: @escaping ((WalletMetadata?) -> () )) {
         

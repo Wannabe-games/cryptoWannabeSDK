@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class LoginService {
+class LoginService {
    
     let proxyURL = URL(string: "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet")!
     

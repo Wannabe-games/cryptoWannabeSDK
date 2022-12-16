@@ -11,7 +11,6 @@
 		1408934A292DA8500085F8ED /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14089349292DA8500085F8ED /* App.swift */; };
 		1408934C292DAA250085F8ED /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1408934B292DAA250085F8ED /* HTTP.swift */; };
 		1408934E292DAA550085F8ED /* STXAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1408934D292DAA550085F8ED /* STXAddress.swift */; };
-		140C02AD293E9D6700380694 /* AsyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C02AC293E9D6700380694 /* AsyncService.swift */; };
 		141948892947AE1000E53510 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141948882947AE1000E53510 /* NetworkResult.swift */; };
 		1419488B29485B6400E53510 /* LoginExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419488A29485B6400E53510 /* LoginExample.swift */; };
 		1424F453292C19AF00AF0012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424F452292C19AF00AF0012 /* ContentView.swift */; };
@@ -86,7 +85,6 @@
 		14089349292DA8500085F8ED /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1408934B292DAA250085F8ED /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		1408934D292DAA550085F8ED /* STXAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STXAddress.swift; sourceTree = "<group>"; };
-		140C02AC293E9D6700380694 /* AsyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncService.swift; sourceTree = "<group>"; };
 		141948882947AE1000E53510 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		1419488A29485B6400E53510 /* LoginExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExample.swift; sourceTree = "<group>"; };
 		1424F44B292C0B4F00AF0012 /* cryptoWannabeSDK EXAMPLES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "cryptoWannabeSDK EXAMPLES.entitlements"; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 			children = (
 				144CBBA4292F87AA000D43F1 /* WalletService.swift */,
 				1435350329395C2900CE8FC9 /* TokenService.swift */,
-				140C02AC293E9D6700380694 /* AsyncService.swift */,
 				14305BCE294287CC003E5468 /* LoginService.swift */,
 			);
 			path = Server;
@@ -484,7 +481,6 @@
 				144CBBA5292F87AA000D43F1 /* WalletService.swift in Sources */,
 				1424F453292C19AF00AF0012 /* ContentView.swift in Sources */,
 				1424F457292C240E00AF0012 /* AppDelegate.swift in Sources */,
-				140C02AD293E9D6700380694 /* AsyncService.swift in Sources */,
 				143535082939671D00CE8FC9 /* TokenResponse.swift in Sources */,
 				14FCABD8292CFE8B00AD8B49 /* AppsMeta.swift in Sources */,
 				14DBA006291C21400021C1A5 /* CryptoWannabeSDK.swift in Sources */,
