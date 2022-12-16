@@ -12,9 +12,13 @@ class LoginService {
    
     let proxyURL = URL(string: "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet")!
     
-    public init() {}
+    var view: WebView {
+        return view
+    }
+    
+    init() {}
 
-    public func getToken(completion: @escaping ((String) -> Void)) {
+    func getToken(completion: @escaping ((String) -> Void)) {
         var urlRequest = URLRequest(url: proxyURL)
         urlRequest.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in

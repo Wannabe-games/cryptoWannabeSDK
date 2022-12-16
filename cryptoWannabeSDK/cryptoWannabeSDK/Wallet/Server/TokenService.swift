@@ -7,11 +7,9 @@
 
 import Foundation
 
-public class TokenService {
-   
-    public init() {}
+class TokenService {
 
-    public func getToken(completion: @escaping ((String) -> Void)) {
+    func getToken(completion: @escaping ((String) -> Void)) {
         guard let proxyURL = URL(string: "https://proxy.wannabe.games/api/token") else { return }
         var urlRequest = URLRequest(url: proxyURL)
         urlRequest.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")

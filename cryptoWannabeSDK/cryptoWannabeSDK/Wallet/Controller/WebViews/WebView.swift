@@ -8,14 +8,13 @@
 import SwiftUI
 import WebKit
 
-public struct WebView: UIViewControllerRepresentable {
-    public init() {}
+struct WebView: UIViewControllerRepresentable {
 
-    public func makeUIViewController(context: Context) -> WebViewController {
+    func makeUIViewController(context: Context) -> WebViewController {
         return WebViewController()
     }
     
-    public func updateUIViewController(_ UIViewController: WebViewController, context: Context) {
+    func updateUIViewController(_ UIViewController: WebViewController, context: Context) {
     }
 }
 

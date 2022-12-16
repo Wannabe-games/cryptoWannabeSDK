@@ -8,7 +8,7 @@
 import Foundation
 import WebKit
 
-public class WebViewController: UIViewController, WKNavigationDelegate {
+class WebViewController: UIViewController, WKNavigationDelegate {
     
     var token = UserDefaultsHandler.token
 
@@ -18,7 +18,7 @@ public class WebViewController: UIViewController, WKNavigationDelegate {
         return webView
     }()
     
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
         view.addSubview(webView)

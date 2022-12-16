@@ -10,6 +10,7 @@ import CryptoWannabeSDK
 
 
 struct ContentView: View {
+    private let cryptoWannabeSDK = CryptoWannabeSDK()
     @State private var showWebView = false
         
     var body: some View {
@@ -19,11 +20,9 @@ struct ContentView: View {
             Text("Connect with Wallet")
         }
         .sheet(isPresented: $showWebView) {
-            WebView()
+            cryptoWannabeSDK.view
         }.onAppear {
-            TokenService().getToken { token in
-                print("Token: \(token)")
-            }
+            cryptoWannabeSDK.getToken()
         }
     }
 }

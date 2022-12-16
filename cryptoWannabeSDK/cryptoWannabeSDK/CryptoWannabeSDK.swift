@@ -6,10 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 public final class CryptoWannabeSDK {
+    
+    public init() {}
 
-
+    private let loginService = LoginService()
+    private let tokenService = TokenService()
 }
 
 //MARK: -- wallet interface
@@ -17,6 +21,11 @@ public final class CryptoWannabeSDK {
 extension CryptoWannabeSDK {
     public static var isWalletAuthenticated: Bool {
         return walletMedatada != nil
+    }
+    
+    /// view - for swiftUI
+    public var view: some View {
+        WebView()
     }
     
     static var walletMedatada: WalletMetadata? {
@@ -28,5 +37,11 @@ extension CryptoWannabeSDK {
     
     public static func logout() {
         UserDefaultsHandler.walletMetadata = nil
+    }
+    
+    public func getToken() {
+        tokenService.getToken { token in
+            print("\(token)")
+        }
     }
 }
