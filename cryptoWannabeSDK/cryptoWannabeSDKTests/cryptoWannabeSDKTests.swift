@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import cryptoWannabeSDK
+@testable import CryptoWannabeSDK
 
 class cryptoWannabeSDKTests: XCTestCase {
 

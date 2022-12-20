@@ -6,21 +6,31 @@
 //
 
 import SwiftUI
+import CryptoWannabeSDK
+
 
 struct ContentView: View {
+    private let cryptoWannabeSDK = CryptoWannabeSDK()
+    @State private var showWebView = false
+        
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world! I am future SDK made by Wannabe.Games! Isn't that awesome?!")
+        Button {
+            showWebView.toggle()
+        } label: {
+            Text("Connect with Wallet")
         }
-        .padding()
+        .sheet(isPresented: $showWebView) {
+            cryptoWannabeSDK.view
+        }.onAppear {
+            cryptoWannabeSDK.getToken()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        } .previewLayout(.sizeThatFits)
     }
 }

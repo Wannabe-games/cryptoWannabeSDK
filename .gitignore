@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode
-# Edit at https://www.toptal.com/developers/gitignore?templates=swift,cocoapods,xcode
-
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
 
@@ -15,7 +12,8 @@ Pods/
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
-xcuserdata/
+xcuserdata
+xcuserdata/*
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
@@ -105,5 +103,3 @@ iOSInjectionProject/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
-
-# End of https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode
