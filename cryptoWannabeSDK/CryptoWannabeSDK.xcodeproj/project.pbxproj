@@ -38,6 +38,9 @@
 		14DB9FFE291C19C40021C1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DB9FFD291C19C40021C1A5 /* Assets.xcassets */; };
 		14DBA001291C19C40021C1A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DBA000291C19C40021C1A5 /* Preview Assets.xcassets */; };
 		14DBA006291C21400021C1A5 /* CryptoWannabeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBA005291C21400021C1A5 /* CryptoWannabeSDK.swift */; };
+		14E592FD2974974B00F7DDD3 /* BuyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E592FC2974974B00F7DDD3 /* BuyResponse.swift */; };
+		14E592FF29749B3B00F7DDD3 /* BuyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E592FE29749B3B00F7DDD3 /* BuyData.swift */; };
+		14E593012975300900F7DDD3 /* BuyTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E593002975300900F7DDD3 /* BuyTokenService.swift */; };
 		14FCABD6292CFC2900AD8B49 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FCABD5292CFC2900AD8B49 /* Profile.swift */; };
 		14FCABD8292CFE8B00AD8B49 /* AppsMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FCABD7292CFE8B00AD8B49 /* AppsMeta.swift */; };
 /* End PBXBuildFile section */
@@ -114,6 +117,9 @@
 		14DB9FFD291C19C40021C1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14DBA000291C19C40021C1A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14DBA005291C21400021C1A5 /* CryptoWannabeSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWannabeSDK.swift; sourceTree = "<group>"; };
+		14E592FC2974974B00F7DDD3 /* BuyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyResponse.swift; sourceTree = "<group>"; };
+		14E592FE29749B3B00F7DDD3 /* BuyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyData.swift; sourceTree = "<group>"; };
+		14E593002975300900F7DDD3 /* BuyTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTokenService.swift; sourceTree = "<group>"; };
 		14FCABD5292CFC2900AD8B49 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		14FCABD7292CFE8B00AD8B49 /* AppsMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsMeta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +176,7 @@
 				144CBBA4292F87AA000D43F1 /* WalletService.swift */,
 				1435350329395C2900CE8FC9 /* TokenService.swift */,
 				14305BCE294287CC003E5468 /* LoginService.swift */,
+				14E593002975300900F7DDD3 /* BuyTokenService.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 				1424F463292CEC9C00AF0012 /* Status.swift */,
 				1424F468292CED6B00AF0012 /* Method.swift */,
 				1424F45F292CEA8900AF0012 /* WalletMetadata.swift */,
+				14E592FE29749B3B00F7DDD3 /* BuyData.swift */,
 				14FCABD4292CFBFB00AD8B49 /* MetaData */,
 			);
 			path = Response;
@@ -209,6 +217,7 @@
 		1436BBB02947445000870C8D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				14E592FC2974974B00F7DDD3 /* BuyResponse.swift */,
 				1436BBB12947446500870C8D /* LoginResponse.swift */,
 				141948882947AE1000E53510 /* NetworkResult.swift */,
 				1419488A29485B6400E53510 /* LoginExample.swift */,
@@ -475,11 +484,14 @@
 			files = (
 				1424F455292C1D5C00AF0012 /* WebViewController.swift in Sources */,
 				14089346292DA6150085F8ED /* WalletMetadataResponse.swift in Sources */,
+				14E592FD2974974B00F7DDD3 /* BuyResponse.swift in Sources */,
 				1436BBB22947446500870C8D /* LoginResponse.swift in Sources */,
+				14E593012975300900F7DDD3 /* BuyTokenService.swift in Sources */,
 				14FCABD6292CFC2900AD8B49 /* Profile.swift in Sources */,
 				1424F462292CEAF300AF0012 /* UserDefaultsHandler.swift in Sources */,
 				144CBBA5292F87AA000D43F1 /* WalletService.swift in Sources */,
 				1424F453292C19AF00AF0012 /* ContentView.swift in Sources */,
+				14E592FF29749B3B00F7DDD3 /* BuyData.swift in Sources */,
 				1424F457292C240E00AF0012 /* AppDelegate.swift in Sources */,
 				143535082939671D00CE8FC9 /* TokenResponse.swift in Sources */,
 				14FCABD8292CFE8B00AD8B49 /* AppsMeta.swift in Sources */,

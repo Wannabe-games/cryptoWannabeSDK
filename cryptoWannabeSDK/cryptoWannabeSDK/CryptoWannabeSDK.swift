@@ -14,6 +14,7 @@ public final class CryptoWannabeSDK {
 
     private let loginService = LoginService()
     private let tokenService = TokenService()
+    private let buyTokenService = BuyTokenService()
 }
 
 //MARK: -- wallet interface
@@ -41,6 +42,12 @@ extension CryptoWannabeSDK {
     
     public func getToken() {
         tokenService.getToken { token in
+            print("\(token)")
+        }
+    }
+    
+    public func getBuyToken() {
+        buyTokenService.getToken { token in
             print("\(token)")
         }
     }

@@ -13,7 +13,7 @@ class LoginService {
     let proxyURL = URL(string: "https://proxy.wannabe.games/api/connect/\(UserDefaultsHandler.token)/wallet")!
     
     var view: WebView {
-        return view
+        return self.view
     }
     
     init() {}
