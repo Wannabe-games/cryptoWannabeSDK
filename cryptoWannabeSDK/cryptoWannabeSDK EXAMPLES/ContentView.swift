@@ -15,7 +15,9 @@ struct ContentView: View {
         
     var body: some View {
         Button {
-            showWebView.toggle()
+//            showWebView.toggle()
+            
+            cryptoWannabeSDK.getBuyToken()
         } label: {
             Text("Connect with Wallet")
         }
