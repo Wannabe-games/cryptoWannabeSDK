@@ -30,9 +30,6 @@ class BuyTokenService {
             
             var model: BuyResponse?
             do {
-                
-                
-                
                 model = try JSONDecoder().decode(BuyResponse.self, from: data)
             }
             catch {
@@ -52,5 +49,50 @@ class BuyTokenService {
             print("dsdsa")
             completion("dsadasas")
         }.resume()
+    }
+    
+    func createPayment(transactionId: String, amount: Double) {
+        let headers = [
+            "memo": transactionId,
+            "amount": String(amount)
+        ]
+        let request = NSMutableURLRequest(url: NSURL(string: "https://proxy.wannabe.games/api/payment/create")! as URL,
+                                          cachePolicy: .useProtocolCachePolicy,
+                                          timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                print(httpResponse)
+                if let data = data {
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        print(json)
+                        if let jsonDict = json as? [String: Any] {
+                            if let status = jsonDict["status"] as? String, status == "success" {
+                                if let responseInfo = jsonDict["responseInfo"] as? String, responseInfo == "Payment created" {
+                                    if let data = jsonDict["data"] as? [String: Any],
+                                        let token = data["token"] as? String,
+                                        let userURL = data["userURL"] as? String {
+                                        print("Payment created with token: \(token) and userURL: \(userURL)")
+                                    }
+                                }
+                            } else if let status = jsonDict["status"] as? String, status == "error" {
+                                if let responseInfo = jsonDict["responseInfo"] as? String {
+                                    print("Error: \(responseInfo)")
+                                }
+                            }
+                        }
+                    } catch {
+                        print("Error deserializing JSON: \(error)")
+                    }
+                }
+            }
+        })
+        dataTask.resume()
     }
 }
