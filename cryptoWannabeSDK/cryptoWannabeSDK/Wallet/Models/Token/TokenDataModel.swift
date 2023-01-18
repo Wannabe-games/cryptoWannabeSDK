@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct TokenDataModel: Decodable {
+struct TokenDataModel: Codable {
     let token: String
 }
