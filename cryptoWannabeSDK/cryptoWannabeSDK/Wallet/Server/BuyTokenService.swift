@@ -56,7 +56,7 @@ class BuyTokenService {
             "memo": transactionId,
             "amount": String(amount)
         ]
-        let request = NSMutableURLRequest(url: NSURL(string: "https://proxy.wannabe.games/api/payment/create")! as URL,
+        let request = NSMutableURLRequest(url: URL(string: "https://proxy.wannabe.games/api/payment/create")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "GET"
