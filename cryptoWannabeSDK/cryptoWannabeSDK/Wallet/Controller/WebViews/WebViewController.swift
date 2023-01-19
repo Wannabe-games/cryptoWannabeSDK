@@ -23,6 +23,8 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         view.backgroundColor = .cyan
         view.addSubview(webView)
         webView.frame = view.bounds
+        
+        CryptoWannabeSDK().getToken()
 
 
         guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }

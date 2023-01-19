@@ -17,6 +17,7 @@ class TokenService {
             guard let data = data else { return }
             guard let model = try? JSONDecoder().decode(TokenResponse.self, from: data) else { return }
             UserDefaultsHandler.token = model.data.token
+            print("MMMMMM: \(model.data.token)")
             completion(model.data.token)
         }.resume()
     }
