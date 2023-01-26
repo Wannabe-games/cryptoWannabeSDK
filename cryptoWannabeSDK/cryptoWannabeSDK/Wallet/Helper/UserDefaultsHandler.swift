@@ -11,8 +11,11 @@ struct UserDefaultsHandler {
     @Storage(key: .walletMetadata, defaultValue:  nil)
     static var walletMetadata: WalletMetadata?
     
-    @Storage(key: .token, defaultValue: "")
-    static var token: String
+    @Storage(key: .authorizationToken, defaultValue: "")
+    static var authorizationToken: String
+    
+    @Storage(key: .sessionToken, defaultValue: "")
+    static var sessionToken: String
 }
 
 @propertyWrapper
@@ -42,5 +45,7 @@ struct Storage<T: Codable> {
 
 enum StorageKey: String {
     case walletMetadata
-    case token
+    case sessionToken
+    case authorizationTokenValue
+    case authorizationTokenKey
 }

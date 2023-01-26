@@ -49,6 +49,7 @@ extension CryptoWannabeSDK {
     public func getBuyToken() {
         buyTokenService.getToken { token in
             print("\(token)")
+            print(WalletMetadata.self)
         }
     }
 }
