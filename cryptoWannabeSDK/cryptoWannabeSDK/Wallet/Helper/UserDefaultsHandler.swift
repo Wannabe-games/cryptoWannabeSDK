@@ -11,8 +11,11 @@ struct UserDefaultsHandler {
     @Storage(key: .walletMetadata, defaultValue:  nil)
     static var walletMetadata: WalletMetadata?
     
-    @Storage(key: .authorizationToken, defaultValue: "")
-    static var authorizationToken: String
+    @Storage(key: .authorizationTokenKey, defaultValue: "")
+    static var authorizationTokenKey: String
+    
+    @Storage(key: .authorizationTokenValue, defaultValue: "")
+    static var authorizationTokenValue: String
     
     @Storage(key: .sessionToken, defaultValue: "")
     static var sessionToken: String

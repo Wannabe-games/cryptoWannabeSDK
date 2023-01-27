@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        UserDefaultsHandler.authorizationTokenKey = "" //nazwa klucza
-        UserDefaultsHandler.authorizationTokenValue = "8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd" //filipkwy
+        UserDefaultsHandler.authorizationTokenKey = "Authorization" //nazwa klucza
+        UserDefaultsHandler.authorizationTokenValue = "8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd" //filipkowy
         return true
     }
 }

@@ -8,13 +8,13 @@
 import Foundation
 
 class BuyTokenService {
+    //4 buttony do kazdego endpointu
 
     func getToken(completion: @escaping ((String?) -> Void)) {
         guard let proxyURL = URL(string: "https://proxy.wannabe.games/api/connect/create") else { return }
         var urlRequest = URLRequest(url: proxyURL)
-        //missing field: barer
-        //missing field: auth token
-        urlRequest.setValue("8lTWSnJCHxA0NG1aOjwUL0j0vtGjA7HmqDQP900UrVCpKJntwd", forHTTPHeaderField: "auth")
+        urlRequest.setValue(UserDefaultsHandler.authorizationTokenValue,
+                            forHTTPHeaderField: UserDefaultsHandler.authorizationTokenKey)
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard let data = data else { return }
             

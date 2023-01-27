@@ -21,10 +21,24 @@ struct ContentView: View {
         } label: {
             Text("Connect with Wallet")
         }
-        .sheet(isPresented: $showWebView) {
-            cryptoWannabeSDK.view
-        }.onAppear {
+        
+        Button {
             cryptoWannabeSDK.getToken()
+        } label: {
+            Text("Get Token")
+        }
+      
+        
+        Button {
+            cryptoWannabeSDK.getAuthorizationToken()
+        }  label: {
+            Text("Get Authorization Token")
+        }
+        
+        Button {
+            cryptoWannabeSDK.getSessionToken()
+        } label: {
+            Text("Get Session Token")
         }
     }
 }

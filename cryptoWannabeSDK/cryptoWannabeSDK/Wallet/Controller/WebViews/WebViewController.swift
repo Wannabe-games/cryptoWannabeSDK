@@ -10,7 +10,7 @@ import WebKit
 
 class WebViewController: UIViewController, WKNavigationDelegate {
     
-    var token = UserDefaultsHandler.token
+    var token = UserDefaultsHandler.sessionToken
 
     lazy var webView: WKWebView = {
         let webView = WKWebView()
@@ -27,7 +27,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         CryptoWannabeSDK().getToken()
 
 
-        guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.token)") else { return }
+        guard let proxyURL = URL(string: "https://proxy.wannabe.games/connect/\(UserDefaultsHandler.sessionToken)") else { return }
         //option with Safari
         UIApplication.shared.open(proxyURL, completionHandler: nil)
         var request = URLRequest(url: proxyURL)

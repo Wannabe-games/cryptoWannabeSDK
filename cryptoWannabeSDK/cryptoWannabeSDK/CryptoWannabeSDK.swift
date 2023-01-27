@@ -52,4 +52,12 @@ extension CryptoWannabeSDK {
             print(WalletMetadata.self)
         }
     }
+    
+    public func getAuthorizationToken() {
+        print(UserDefaultsHandler.authorizationTokenValue)
+    }
+    
+    public func getSessionToken() {
+        print(UserDefaultsHandler.sessionToken)
+    }
 }
